@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <div class="head">
+        <h1 class="head1">DojoWeather</h1>
+        <h2 class="head2" onclick="alert('Loading weather report...')">Burbank</h2>
+        <h2 class="head3" onclick="alert('Loading weather report...')">Chicago</h2>
+        <h2 class="head4" onclick="alert('Loading weather report...')">Dallas</h2>
+    </div>
+<body>
+    <div class="citytemp">
+        <h1 class="city1">San Jose</h1>
+        <h3 class="city2">show temperature in</h3>
+        <select name="temp" id="city3" onchange="picktemp(this)">
+            <option value="cel">°C</option>
+            <option value="far">°F</option>
+        </select>
+    </div>
+    <div class="container">
+        <div class="today">
+            <h1>Today</h1>
+            <img id="rain" src="img\some_rain.png" alt="somerain">
+            <h3>some rain</h3>
+            <div class="hilow1">
+                <h1 class="hi">24°</h1>
+                <h1 class="low">18°</h1>
+            </div>
+        </div>
+        <div class="tomorrow">
+            <h1>Tomorrow</h1>
+            <img id="sun" src="img\some_sun.png" alt="somesun">
+            <h3>some sun</h3>
+            <div class="hilow1">
+                <h1 class="hi">27°</h1>
+                <h1 class="low">19°</h1>
+            </div>
+        </div>
+        <div class="friday">
+            <h1>Friday</h1>
+            <img id="cloud" src="img\some_clouds.png" alt="someclouds">
+            <h3>some clouds</h3>
+            <div class="hilow1">
+                <h1 class="hi">21°</h1>
+                <h1 class="low">16°</h1>
+            </div>
+        </div>
+        <div class="saturday">
+            <h1>Saturday</h1>
+            <img id="sun" src="img\some_sun.png" alt="somesun">
+            <h3>some sun</h3>
+            <div class="hilow1">
+                <h1 class="hi">26°</h1>
+                <h1 class="low">21°</h1>
+            </div>
+        </div>
+    </div>
+    <div onclick="hide(this)" class="cookie">
+        <div onclick="hide(this)" class="stopcookie">
+            Stop! Cookie time.
+        </div>
+        <div onclick="hide(this)" class="cookiesplain">
+            <img  onclick="hide(this)" id="cookie1" src="img\cookie.png" alt="cookie">
+            <h3 onclick="hide(this)" id="cookie2"> 
+                We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <span id="cookie3">Read more...</span>
+            </h3>
+            <button id="cookie-btn" onclick="hide(this)">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
